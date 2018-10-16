@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: pink; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* Header/Blog Title */
+.header {
+	font-family: '3dumbregular';
+    color:"#F0FFF0";
+    padding: 30px;
+    text-align: center;
+	background:url(Cafe.gif);
+
+}
+@font-face {
+    font-family: '3dumbregular';
+    src: url('3Dumb-webfont.eot');
+    src: url('3Dumb-webfont.eot?#iefix') format('embedded-opentype'),
+         url('3Dumb-webfont.woff2') format('woff2'),
+         url('3Dumb-webfont.woff') format('woff'),
+         url('3Dumb-webfont.ttf') format('truetype'),
+         url('3Dumb-webfont.svg#3dumbregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.header h1 {
+	font-family:'3dumbregular';
+    font-size: 50px;
+	
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 70%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 30%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+/* map */
+.map {
+    background-color: #111111;
+    width: 100%;
+    padding: 20px;
+
+}
+.map01 {
+    background-color: #eeeeee;
+    width: 100%;
+    padding: 20px;
+
+}
+
+/* Add a title for map */
+.maptitle {
+	font-family:'3dumbregular';
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+	font-family:'3dumbregular';
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+	background-image:url(66.jpg);
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+.testcolor {
+            height:60VH;
+            background-image:url("http://y.gtimg.cn/music/photo_new/T002R300x300M000003xdmRa3RWKWC.jpg?max_age=2592000");
+            background-position: 50% center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: blur(90px);
+            opacity: 0.6;
+        }

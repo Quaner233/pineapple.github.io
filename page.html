@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" media="screen" href="style2.css" />
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+   		 if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    	} 	 
+    	else {
+        document.getElementById("myBtn").style.display = "none";
+    	}
+	}	
+
+// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	}
+</script>
+<div class="header" id="home">
+  <h1><font color="#F5AE2B">Mapping Your Favorite Coffee Shop</h1>
+  <p font-size="35px">Pineapple_Assignment#02</p></font>
+</div>
+
+<!--最头上两个选项-->
+<div class="topnav">
+  <a href="#map">MAP</a>
+  <a href="#form">ADD</a>
+  <!-- jump to the google form division -->
+  <a href="#page">ABOUT THIS WEBPAGE</a>
+  <a href="#aboutus">ABOUT US</a>
+  <a href="https://twitter.com/Pineapp96005815" style="float:right">Twitter</a>
+</div>
+
+<!-- 左边的-->
+<div class="row">
+  <div class="leftcolumn">
+    <div class="maptitle">
+      <h2>COFFEE SHOPS SG</h2>
+	  <!-- 介绍，在下面编辑 -->
+      <p><font face="Arial">Click to find out where are the best coffee shops in town !</p></font>
+	  <!--地图-->
+      <div class="map" id="map" style="width: 100%; height:100%;">
+
+		<html>
+		<head>
+			<title>COFFEE SHOPS SG</title>
+			<meta charset="utf-8" />
+			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" />
+				<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    			<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+    			<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+    			<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" crossorigin=""/>
+   				<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" crossorigin=""></script>
+    			<script src="https://unpkg.com/esri-leaflet/dist/esri-leaflet.js"></script>
+    			<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    			<script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
+    			<script src='http://underscorejs.org/underscore-min.js'></script>
+    			
+		</head>
+
+		<body>
+			<br>
+			<br>
+			<title>For Coffee Lovers</title>
+			<div id="mapid" style="width: 100%; height: 800px;"></div>
+			<script src = './test.js'></script>
+	</body>
+
+	</html>
+	</div>
+    </div>
+	
+	<!--地图下面的文本-->
+    <div class="maptitle">
+      <h2>FOR COFFEE LOVERS</h2>
+      
+      <font face="Arial">
+	  <p>This website allows you to find out the coffee shops people recommended. </p>
+      <p>By completing the questionnaire on the right of this page, you are able to tell everyone where your
+      favorite coffee shop is, and share the intereset of yours! You can also clik on the coffee cup icon on 
+  	the map to see others' best coffee shop and its location!</p>
+	  <p>For the second from, vote for the coffee you like most, and check which one is everyones' favorite !</p>
+	  <br>
+	  <p>Click the pictures below to find out the difference between various kinds of coffee.</p>
+	  <br>
+	  
+	  </font>
+	  <div class="map01"  id="page" style="height:200px;">
+		  <center>
+		  <table>
+			<thead>
+			 <tr>
+				  <th>Espresso</th>
+				  <th>Americano</th>
+				  <th>Cuppuccino</th>
+				  <th>Macchiato</th>
+				  <th>Mocha</th>
+				  <th>Latte</th>
+			  </tr>
+			</thead>
+			<tbody>
+				<tr>
+				  <td><a href = "https://en.wikipedia.org/wiki/Espresso" target="_blank"><img src="e1.jpg" width="128" height="128"/></td>
+				  <td><a href = "https://en.wikipedia.org/wiki/Caff%C3%A8_Americano" target="_blank"><img src="a1.jpg" width="128" height="128"/></td>
+				  <td><a href = "https://en.wikipedia.org/wiki/Cappuccino" target="_blank"><img src="c1.jpg" width="128" height="128"/></td>
+				  <td><a href = "https://en.wikipedia.org/wiki/Caff%C3%A8_macchiato" target="_blank"><img src="m1.jpg" width="128" height="128"/></td>
+				  <td><a href = "https://en.wikipedia.org/wiki/Caff%C3%A8_mocha" target="_blank"><img src="e2.jpg" width="128" height="128"/></td>
+				  <td><a href = "https://en.wikipedia.org/wiki/Latte" target="_blank"><img src="l1.jpg" width="128" height="128"/></td>
+				</tr>
+		    </tbody>
+		  <tfoot>
+			<td></td>
+			<td></td>
+		  </table>
+		  </center>
+		  </div>
+	</div>
+	<div class="testcolor" style height="200">
+
+    </div>
+  </div>
+  
+ <!--右边的-->
+  <div class="rightcolumn">
+    <div class="maptitle" id="form">
+	  <h2>Questionnaires</h2>
+	  <p><font face="Arial">Let's contribute for the coffee lovers to find the best coffee in town! 【Please note it may take a while to show on the map, you can try reload the page:)】</font></p>
+	  <!--Google Form-->
+      <center><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSekjUTen9in5MZ4ezC5RxgsF4KSK1eYpnvIb4IXmzkA5k4kEw/viewform?usp=sf_link" width=100% height="600" frameborder="1" marginheight="0" marginwidth="0">Loading...</iframe></center>
+      <center><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfA7Xjxf9Zl_Gd7-pV2jSE9kT6i8_iP4OPc7aYmHDUvhtG6Yw/viewform?usp=sf_link" width=100% height="300" frameborder="1" marginheight="0" marginwidth="0">Loading...</iframe></center>
+     <br>
+	 <br>
+	 <div class="map" style="height:300px;"><iframe width= 100% height="250" src="https://www.youtube.com/embed/p9jY5clw3P0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+		<h2>About Coffee: 
+		<font face="Arial" font size="3"><a href="https://en.wikipedia.org/wiki/Coffee">more information</a></font></h2>
+		
+    </div>
+    <div class="maptitle">
+      <h3>About Pineapple</h3>
+      <a href = "https://twitter.com/Pineapp96005815" target="_blank"> <img src="twitter.png" alt="open our twitter" width="40" /></a>
+	  <h4>Our Member</h4>
+	  <table>
+			  <li><a href='https://twitter.com/Mengqi_IntGIS'>Liu Mengqi</a></li>
+			  <li><a href='https://twitter.com/linkiwu'>Lin Yifan</a></li>
+			  <li><a href = 'https://twitter.com/Lesley_LZX'>Liang Zixiang</a></li>
+			  <li><a href = 'https://twitter.com/Quaner_233'>Peng Jinglin</a></li>
+
+	  </table>
+    </div>
+  </div>
+</div>
+
+<!--最下面的注释-->
+<div class="footer" id="aboutus">
+  <h2><font color="#ffffcc">Thanks for visiting our website ;D</h2>
+  <center><p>Produced by: Pineapple</h4></p>
+  </font>
+</div>
+
+</body>
+</html>
